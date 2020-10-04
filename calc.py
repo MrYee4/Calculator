@@ -3,36 +3,44 @@
 # Calculator program will take exations and solve them
 import math
 
+# Finds Magnitude of Vector
 def magVector():
     Vx = float(input("Vx = "))
     Vy = float(input("Vy = "))
     mag = math.sqrt((Vx * Vx) + (Vy * Vy))
     print("Magnitude of the vector = ", mag)
 
+# Finds the angle the vector is at
 def angleVector():
     Vx = float(input("Vx = "))
     Vy = float(input("Vy = "))    
     ang = math.atan(math.radians(Vy/Vx))
     print("Angle of the vector = ", ang)
 
+# Finds the x compnent of the vector
 def findVx():
     mag = float(input("Magnitude = "))
     ang = float(input("Angle = "))    
     Vx = mag * math.cos(math.radians(ang))
     print("Vx = ", Vx)
 
+# Finds the y compnent of the vetor
 def findVy():
     mag = float(input("Magnitude = "))
     ang = float(input("Angle = "))    
     Vy = mag * math.sin(math.radians(ang))
     print("Vy = ", Vy)
 
+# Finds the x compnent of the vector
+# if the angle is on the y axis
 def findVxYAxis():
     mag = float(input("Magnitude = "))
     ang = float(input("Angle = "))    
     Vx = mag * math.sin(math.radians(ang))
     print("Vx from y axis = ", Vx)
 
+# Finds the y compnent of the vector
+# if the angle is on the y axis
 def findVyYAxis():
     mag = float(input("Magnitude = "))
     ang = float(input("Angle = "))    
